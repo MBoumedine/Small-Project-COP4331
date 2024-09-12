@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/code.js"></script>
     <title>Login Page</title>
     <link rel="stylesheet" href="css/base.css">
 </head>
@@ -23,6 +24,8 @@
                 <div class="field input-field">
                     <input type="text" id="password" placeholder="Enter your password" required>
                 </div>
+
+                <span id="loginResult"></span>
             </form>
 
             <div class="field button-field">
@@ -34,8 +37,6 @@
                 <span>Don't have an account? <a href="signup.html" class="signup" onclick="doLogin();">Sign up</a></span>
             </div>
         </div>
-
-        <span id="loginResult"></span>
     </div>
 </body>
 </html>
