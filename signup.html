@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1 id="title">COP4331 Contact Manager</h1>
@@ -15,16 +16,6 @@
             <header>Sign Up</header>
 
             <form action="#">
-                <label for="uname">Full Name</label>
-                <div class="field input-field">
-                    <input type="text" id="fullname" placeholder="Enter your full name" required>
-                </div>
-
-                <label for="uname">Email</label>
-                <div class="field input-field">
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                </div>
-
                 <label for="uname">Username</label>
                 <div class="field input-field">
                     <input type="text" id="username" placeholder="Enter your username" required>
@@ -39,12 +30,12 @@
             </form>
 
             <div class="field button-field">
-                <button type="submit">Create Account</button>
+                <button type="submit" onclick="doSignup()">Create Account</button>
             </div>
 
             <!-- link to login page -->
             <div class="form-link">
-                <span>Already have an account? <a href="login.html" class="signup" onclick="doLogin();">Login</a></span>
+                <span>Already have an account? <a href="index.html" class="signup">Login</a></span>
            </div>
         </div>
     </div>
