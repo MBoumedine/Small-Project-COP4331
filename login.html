@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
     <title>Login Page</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1 id="title">COP4331 Contact Manager</h1>
+    <h1 id="title">COP4331 Contact Manager - Group 21</h1>
 
     <div class="form-login">
         <div class="form-content">
@@ -29,12 +30,12 @@
             </form>
 
             <div class="field button-field">
-                <button type="submit">Login</button>
+                <button type="submit" onclick="doLogin()">Login</button>
             </div>
 
             <!-- link to signup page -->
             <div class="form-link">
-                <span>Don't have an account? <a href="signup.html" class="signup" onclick="doLogin();">Sign up</a></span>
+                <span>Don't have an account? <a href="signup.html" class="signup">Sign up</a></span>
             </div>
         </div>
     </div>
