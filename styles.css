@@ -5,10 +5,7 @@
 }
 
 body {
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
-    /* height: 100vh; */
     background-color: #f0f2f5;
     font-family: Arial, sans-serif;
 }
@@ -52,8 +49,19 @@ h1#title {
     border-radius: 4px;
 }
 
+#loginResult {
+    width: 100%;
+    /* padding: 10px; */
+    display: inline-block;
+    font-size: 1em;
+    /* margin-left: 2%;
+    margin-bottom: 2%; */
+    font-family: 'Ubuntu', sans-serif;
+    color: #95060a;
+}
+
 .button-field button[type="submit"] {
-    margin-top: 20px;
+    margin-top: 17px;
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -81,3 +89,4 @@ h1#title {
 .form-link a:hover {
     text-decoration: underline;
 }
+
