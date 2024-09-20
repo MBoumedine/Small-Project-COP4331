@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/dashboard.js"></script>
+    <title>Contact Manager Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-tabs">
+        <a href="#" class="tab-link active-tab" onclick="showTab(event, 'create')">Create</a>
+        <a href="#" class="tab-link" onclick="showTab(event, 'retrieve')">Retrieve</a>
+        <a href="#" class="tab-link" onclick="showTab(event, 'update')">Update</a>
+        <a href="#" class="tab-link" onclick="showTab(event, 'delete')">Delete</a>
+    </div>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+    <div class="content">
+      <div id="create" class="tab-content active">
+          <h2>Create Contact</h2>
+          <form id="create-contact-form">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" placeholder="Enter full name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter email address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="123-456-7890" required>
+            
+            <button type="submit">Save</button>
+        </form>
+      </div>
+
+      <div id="retrieve" class="tab-content">
+        <h2>Retrieve Contacts</h2>
+        <p>List or search for contacts will go here.</p>
+      </div>
+
+      <div id="update" class="tab-content">
+        <h2>Update Contact</h2>
+        <p>Form to update a contact will go here.</p>
+      </div>
+
+      <div id="delete" class="tab-content">
+          <h2>Delete Contact</h2>
+          <p>Form to delete a contact will go here.</p>
+      </div>
+    </div>
+</body>
+</html>
