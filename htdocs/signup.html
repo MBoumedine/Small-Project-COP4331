@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title">COP4331 Contact Manager</h1>
+
+    <div class="form-login">
+        <div class="form-content">
+            <header>Sign Up</header>
+
+            <form onsubmit="doSignup(event);">
+                <label for="uname">Username</label>
+                <div class="field input-field">
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+
+                <label for="pword">Password</label>
+                <div class="field iput-field">
+                    <input type="text" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <span id="signupResult"></span>
+
+                <div class="field button-field">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+
+            <!-- link to login page -->
+            <div class="form-link">
+                <span>Already have an account? <a href="index.html" class="signup">Login</a></span>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="readCookie()">
+    <h1 id="title">COP4331 Contact Manager - Group 21</h1>
+
+    <div class="form-login">
+        <div class="form-content">
+            <header>Login</header>
+
+            <form id="login-form" onsubmit="doLogin(event);">
+                <label for="uname">Username</label>
+                <div class="field input-field">
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+
+                <label for="pword">Password</label>
+                <div class="field input-field">
+                    <input type="text" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <span id="loginResult"></span>
+
+                <div class="field button-field">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+
+            <!-- link to signup page -->
+            <div class="form-link">
+                <span>Don't have an account? <a href="signup.html" class="signup">Sign up</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

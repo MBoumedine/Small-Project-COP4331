@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/code.js"></script>
+    <title>Contact Manager Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-tabs">
+        <a href="#" class="tab-link active-tab" onclick="showTab(event, 'create')">Create</a>
+        <a href="#" class="tab-link" onclick="showTab(event, 'search')">Search</a>
+        <!--<a href="#" class="tab-link" onclick="showTab(event, 'update')">Update</a>
+        <a href="#" class="tab-link" onclick="showTab(event, 'delete')">Delete</a>-->
+    </div>
+      <button class="logout-btn" onclick="doLogout()">Logout</button>
+  </div>
+
+    <div class="content">
+      <div id="create" class="tab-content active">
+          <h2>Create Contact</h2>
+            <div id="create-container">
+            <form id="create-contact-form" onsubmit="return createContact(this);">
+              <label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" placeholder="Enter full name" required>
+              
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" placeholder="Enter email address" required>
+              
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="123-456-7890" required>
+              
+              <button type="submit">Create</button>
+
+            </form>
+          </div>
+      </div>
+
+      <!--
+      <div id="search" class="tab-content">
+    <h2>Search Contacts</h2>
+    <form id="search-contact-form">
+        <label for="search-name">Enter name/email/phone number:</label>
+        <input type="text" id="search-query" placeholder="Enter name/email/phone number" required>
+        <button type="button" onclick="searchContact()">Search</button>
+    </form>
+    <div id="search-results">
+    </div>
+</div>-->
+
+    <div id="retrieve" class="tab-content"></div>
+      <h2>Retrieve Contacts</h2>
+      <!-- <p>List or search for contacts will go here.</p> -->
+        <div id="retrieve-container">
+        <div class="search-bar">
+            <input type="text" id="search-query" placeholder="Search name/email/number">
+            <button class="fa fa-search icon" onclick="searchContact()"></button>
+        </div>
+        <ul class="search-results" id="search-results"></ul>
+
+        <div class="contact-details" id="contact-details" style="display: none;">
+          <label for="edit-fullname">Full Name</label>
+          <input type="text" id="edit-fullname" disabled>
+          
+          <label for="edit-email">Email</label>
+          <input type="email" id="edit-email" disabled>
+          
+          <label for="edit-phone">Phone Number</label>
+          <input type="tel" id="edit-phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" disabled>
+
+          <button class="edit" onclick="enableEditing()">Edit</button>
+          <button class="delete" onclick="deleteContact(this)">Delete</button>
+          <button class="save" onclick="saveContact(this)" style="display: none;">Save</button>
+        </div> 
+      </div>     
+    </div>
+
+<!--
+      <div id="update" class="tab-content">
+        <h2>Update Contact</h2>
+        <p>Form to update a contact will go here.</p>
+      </div>
+
+      <div id="delete" class="tab-content">
+          <h2>Delete Contact</h2>
+          <p>Form to delete a contact will go here.</p>
+      </div>
+    </div>-->
+</body>
+</html>
